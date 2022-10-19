@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.5.1.js"></script>
+    <script>
+    $(document).ready(function(){
+        var gio = 0;
+        var phut = 0;
+        var giay = 0;
+        var Interval;
+        $(".start").click(function(){
+            Interval = setInterval(f , 1000);
+        });
+        $(".stop").click(function(){
+            clearInterval(Interval);
+        });
+        $(".reset").click(function(){
+            gio = 0;
+            phut = 0;
+            giay = 0;
+            clearInterval(Interval);
+            $(".gio").html("00:");
+            $(".phut").html("00:");
+            $(".giay").html("00");
+        });
+
+        function f() {
+            giay++;
+            if (giay == 60) {
+                phut++;
+                giay = 0;
+                if(phut == 60) {
+                    gio++;
+                    phut = 0;
+                }
+            }
+            if (giay < 10) {
+                $(".giay").html("0" + giay);
+            }
+            else
+                $(".giay").html(giay);
+            if (phut < 10) {
+                $(".phut").html("0" + phut + ":");
+            }
+            else
+                $(".phut").html(phut + ":");
+            if (gio < 9) {
+                $(".gio").html("0" + gio + ":");
+            }
+            else
+                $(".gio").html(gio + ":");
+        }
+    });
+    </script>
+</head>
+<body>
+   <span class="gio">00:</span><span class="phut">00:</span><span class="giay">00</span>
+   <br><br>
+   <button class="start">Start</button><button class="reset">Reset</button><button class="stop">Stop</button>
+</body>
+</html>

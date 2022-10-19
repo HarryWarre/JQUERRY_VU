@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent">
+        div(parent)
+        <p>p</p>
+        <span>span</span>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
+        <p>p</p>
+    </div>
+    <div class="b2">
+
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        $("h2").nextUntil("h6").css({"color": "red", "border": "2px solid red"});
+    });
+
+    // Bai 2
+    var input = parseInt(prompt("Enter a Value"));
+
+    if(Number.isInteger(input) === true) {
+        console.log(input);
+        if(isThuanNghich(input) === true)  alert("So thuan nghich"); else alert("So khong thuan nghich");
+    }
+    else alert("Nhap sai");
+
+    function isThuanNghich(n)
+        {
+            var DEC_10 = 10;
+            var a =[];
+            var dem = 0, i;
+            // phan tich n thanh mang cac chu so
+            do
+            {
+                a[dem++] = (n % DEC_10);
+                n = Math.round(n / DEC_10);
+            } while (n > 0);
+            // kiem tra tinh thuan nghich
+            for (i = 0; i < (dem / 2); i++)
+            {
+                if (a[i] != a[(dem - i - 1)])
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+</script>
+</html>

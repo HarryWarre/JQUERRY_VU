@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.5.1.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            N=$(".soN").val();
+            N=parseFloat(N);
+            tam=N;
+            //alert(N);
+            tong=0;
+            while(tam!=0)
+            {
+                tong=tong*10+(tam%10);
+                tam=Math.floor(tam/10);
+            }
+            if(N==tong)
+                $("div").html("<h3>Số thuận nghịch</h3>");
+            else
+                $("div").html("<h3>Không phải là số thuận nghịch</h3>");
+        });   
+    });
+    </script>
+</head>
+<body>
+   <input type="text" class="soN"></input>
+   <br><br>
+   <button>Check</button>
+   <div></div>
+</body>
+</html>

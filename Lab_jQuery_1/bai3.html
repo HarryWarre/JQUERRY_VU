@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hoc web chuan</title>
+<script src=" https://code.jquery.com/jquery-latest.js "></script>
+<script>
+$(function(){
+    $("input").eq(0).val(parseInt(prompt("Input: ")));
+    $("input").eq(1).val(parseInt(prompt("Input: ")));
+    var a = $("input").eq(0).val();
+    var b = $("input").eq(1).val();
+    $("#result").append(Math.max(a,b));
+});
+</script>
+</head>
+<body>
+<input type="text" id="name" value="0"> <input type="text" id="name" value="0">
+<div>Max: <span id="result"></span></div>
+</body>
+</html>
