@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap.css">
+    <script src="./jquery-3.5.1.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    .container {
+        text-align: center;
+    }
+
+    .myborder {
+        border-left: 8px solid white;
+        padding-top: 140px;
+    }
+    
+    .left {
+        padding-top: 140px;
+    }
+
+    header {
+        height: 50px;
+        padding-top: 13px;
+    }
+
+    footer {
+        height: 50px;
+        padding-top: 13px;
+    }
+
+    .main {
+        height: 300px;
+    }
+
+    nav {
+        height: 70px;
+        padding-top: 20px;
+    }
+</style>
+<body>
+    <div class="container border mt-3">
+        <div class="row mb-2">
+            <header class="col-12 bg-success">Header</header>
+        </div>
+        <div class="row mt-2 mb-2">
+            <nav class="col-12 bg-danger">Navigation</nav>
+        </div>
+        <div class="row main">
+            <div class="col-md-3 bg-primary left ">Sidebar</div>
+            <div class="col-md-9 bg-secondary myborder">Main content</div>
+        </div>
+        <div class="row mt-2">
+            <footer class="col bg-warning">Footer</footer>
+        </div>
+    </div>
+</body>
+</html>
