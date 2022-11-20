@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise 3</title>
+    <link rel="stylesheet" href="./ckeditor_4.19.0_full/ckeditor/contents.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./ckeditor_4.19.0_full/ckeditor/ckeditor.js"></script>
+    <script src="./ckeditor_4.19.0_full/ckeditor/adapters/jquery.js"></script>
+    <script>
+       CKEditer.replay('editor');
+    </script>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    Mở bán từ <br><br><input type="date"></input><br><br><br>
+                </td>
+                <td>
+                    Ngày ngừng bán <br><br><input type="date"></input><br><br><br>
+                </td>                
+            </tr>
+            <tr>
+                <td>
+                    Số vé phát hành <br><br><input type="text" placeholder="1779" style="width: 115px"></input><br><br><br>
+                </td>
+                <td>
+                    Ngày phát hành <br><br><input type="date"></input><br><br><br>
+                </td>                
+            </tr>
+            <tr>
+                <td>
+                    Giá vé <br><br><input type="text" placeholder="350000" style="width: 115px"></input><br><br><br>
+                </td>
+                <td>
+                    Đơn vị tính <br><br><input type="text" placeholder="VND" style="width: 115px"></input><br><br><br>
+                </td>                
+            </tr>
+        </table>
+        <textarea class="ckeditor" name="editor" cols="80" rows="10">
+    </form>
+</body>
+</html>
