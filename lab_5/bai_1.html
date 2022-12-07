@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap.css">
+    <script src="./jquery-3.5.1.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    body {
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .email {
+        margin: 20px;
+    }
+    .email input {
+        width: 300px;
+        height: 35px;
+        border: 0;
+        border-bottom: solid;
+        background-color: white;
+    }
+    .pass input {
+        width: 300px;
+        height: 35px;
+        border: 0;
+        border-bottom: solid;
+        background-color: white;
+    }
+    .check {
+        margin-top: 20px;
+        margin-left: -195px;
+    }
+</style>
+<body>
+    <form class="form-signin mt-5">
+        <div class="text-center mb-4">
+            <img class="mb-4" src="./images/bootstrap-logo-shadow.png" alt="" width="85" height="72">
+            <h1 class="h3 mb-3 font-weight-normal">Floating labels</h1>
+            <p>Build form controls with floating labels via the <code>:placeholder-shown</code> pseudo-element. <br><a href="#">Works in latest Chrome, Safari, and Firefox</a></p>
+        </div>
+
+        <div class="email text-center">
+            <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;
+            <input type="email" placeholder="Enter your email:">
+        </div>
+
+        <div class="pass text-center">
+            <i class="fa-solid fa-lock"></i>&nbsp;&nbsp;
+            <input type="password" placeholder="Enter your password:">
+        </div>
+
+        <div class="check text-center">
+            <input type="checkbox">
+            <label>&nbsp;&nbsp;Remember me</label>
+        </div>
+
+        <button class="mt-5 btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <p class="mt-5 mb-3 text-muted text-center">&copy; 2022 - 2023</p>
+    </form>
+</body>
+</html>
