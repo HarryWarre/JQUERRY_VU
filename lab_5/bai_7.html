@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap.css">
+    <script src="./jquery-3.5.1.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    .header {
+        height: 70px;
+    }
+    .sub {
+        padding: 25px 80px;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .large {
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        font-size: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .search {
+        padding-top: 25px;
+        font-size: 20px;
+    }
+    .signin {
+        padding-top: 20px;
+    }
+    .btn {
+        border-radius: 10px;
+    }
+    .list-inline-item {
+        margin: 10px 0;
+        padding-left: 75px;
+    }
+    .list-inline-item a {
+        color:black;
+        font-weight: bold;
+    }
+    .list-inline-item a:hover {
+        text-decoration: none;
+        color: rgb(241, 147, 5);
+        transition: all 0.5s ease;
+    }
+    .main {
+        color: white;
+    }
+    .main1 {
+        font-size: 40px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .main2 {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .main3 {
+        font-weight: bold;
+    }
+    .photo {
+        width: 280px;
+        height: 280px;
+    }
+    .detail {
+        color: blue;
+        font-weight: bold;
+        padding-left: 40px;
+        padding-top: 30px;
+    }
+    .product2 {
+        margin-left: -50px;
+    }
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="col-md-2 sub">
+                Subcribe
+            </div>
+            <div class="col-md-8 large">
+                Large
+            </div>
+            <div class="col-md-2 pl-5">
+                <div class="row">
+                    <div class="col-md-2 search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="col-md-10 signin">
+                        <button class="btn btn-light" type="submit">Sign in</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Coffee</a></li>
+                    <li class="list-inline-item"><a href="#">Tea</a></li>
+                    <li class="list-inline-item"><a href="#">Milk</a></li>
+                    <li class="list-inline-item"><a href="#">Beer</a></li>
+                    <li class="list-inline-item"><a href="#">Cake</a></li>
+                    <li class="list-inline-item"><a href="#">Banh Mi</a></li>
+                    <li class="list-inline-item"><a href="#">Coffee</a></li>
+                    <li class="list-inline-item"><a href="#">Tea</a></li>
+                    <li class="list-inline-item"><a href="#">Milk</a></li>
+                    <li class="list-inline-item"><a href="#">Beer</a></li>
+                    <li class="list-inline-item"><a href="#">Cake</a></li>
+                    <li class="list-inline-item"><a href="#">Banh Mi</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row main">
+            <div class="col-md-12 bg-dark">
+                <div class="row main1 m-4">
+                    Title of a loger<br>featured blog post
+                </div>
+                <div class="row main2 m-4">
+                    Louis Vuitton Malletier use cookies, including third-party cookies, for functional reasons, for statistical analysis, <br>to personalise your experience, offer you content that targets your particular interests and analyse the performance of our advertising campaigns.
+                </div>
+                <div class="row main3 m-4">
+                    Continue reading...
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="row detail">
+                            Product 1
+                        </div>
+                        <div class="row main2 m-4">
+                            Louis Vuitton Malletier use cookies, including third-party cookies, for functional reasons, for statistical analysis
+                        </div>
+                        <div class="row main3 m-4">
+                            Continue reading...
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="photo" src="./images/lv1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-5 product2">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="row detail">
+                            Product 2
+                        </div>
+                        <div class="row main2 m-4">
+                            Louis Vuitton Malletier use cookies, including third-party cookies, for functional reasons, for statistical analysis
+                        </div>
+                        <div class="row main3 m-4">
+                            Continue reading...
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="photo" src="./images/lv2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
