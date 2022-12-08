@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap.css">
+    <script src="./jquery-3.5.1.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col text-center bg-light text-warning pt-2">
+                <h2>CRUD Database</h2>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col">
+                <div class="table-responsive">
+                    <table class="table table-borderedless table-hover">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>First</th>
+                                <th>Last</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Location</th>
+                                <th>Hobby</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>35</b></td>
+                                <td>Jane</td>
+                                <td>Smith</td>
+                                <td>jane@example.com</td>
+                                <td>503-555-5555</td>
+                                <td>Portland, Oregon</td>
+                                <td>Photography</td>
+                                <td>
+                                    <button class="btn btn-warning" type="button">Edit</button>
+                                    <button class="btn btn-danger" type="button">Del</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>36</b></td>
+                                <td>Tristan</td>
+                                <td>Rodriguez</td>
+                                <td>tristan@example.com</td>
+                                <td>201-555-5555</td>
+                                <td>New York, New York</td>
+                                <td></td>
+                                <td>
+                                    <button class="btn btn-warning" type="button">Edit</button>
+                                    <button class="btn btn-danger" type="button">Del</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>37</b></td>
+                                <td>Andrea</td>
+                                <td>Jones</td>
+                                <td>andrea@example.com</td>
+                                <td>503-555-5555</td>
+                                <td>Portland, Oregon</td>
+                                <td>Programming</td>
+                                <td>
+                                    <button class="btn btn-warning" type="button">Edit</button>
+                                    <button class="btn btn-danger" type="button">Del</button>
+                                </td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <td><b>38</b></td>
+                                <td>Richardson</td>
+                                <td>Smith</td>
+                                <td>richardson@example.com</td>
+                                <td></td>
+                                <td>Boise, Idaho</td>
+                                <td></td>
+                                <td>
+                                    <button class="btn btn-warning" type="button">Edit</button>
+                                    <button class="btn btn-danger" type="button">Del</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>39</b></td>
+                                <td>June</td>
+                                <td>Bug</td>
+                                <td>june@example.com</td>
+                                <td></td>
+                                <td></td>
+                                <td>Cooking</td>
+                                <td>
+                                    <button class="btn btn-warning" type="button">Edit</button>
+                                    <button class="btn btn-danger" type="button">Del</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col">
+                <button class="btn btn-primary" type="button">Download CSV</button>
+                <button class="btn btn-success" type="button">Add Item</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
