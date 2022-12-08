@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap.css">
+    <script src="./jquery-3.5.1.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    .header {
+        height: 60px;
+        background-color: #8D9EFF;
+    }
+    h4 {
+        font-family:'Courier New', Courier, monospace;
+        padding-top: 15px;
+        padding-left: 10px;
+    }
+    .menu {
+        padding-left: 490px;
+        padding-top: 10px;
+    }
+    .circle {
+        height: 10px;
+        background: #7fee1d;
+        width: 10px;
+        border-radius: 50px;
+        margin-top: 7px;
+    }
+    .suspended {
+        height: 10px;
+        background: tomato;
+        width: 10px;
+        border-radius: 50px;
+        margin-top: 7px;
+    }
+    .inactive {
+        height: 10px;
+        background: rgb(239, 169, 64);
+        width: 10px;
+        border-radius: 50px;
+        margin-top: 7px;
+    }
+    .page {
+        padding-left: 760px;
+    }
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="row mt-5 header">
+            <div class="col-6 text-white">
+                <h4>User&nbsp;<b>Management</b></h4>
+            </div>
+            <div class="col-6 menu">
+                <button class="btn btn-light" type="button"><i class="fa-solid fa-file-export"></i>&nbsp;&nbsp;Export to Excel</button>
+                <button class="btn btn-light" type="button"><i class="fa-solid fa-folder-plus"></i>&nbsp;&nbsp;Add New User</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="table-responsive">
+                    <table class="table table-borderedless table-hover">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Date Created</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding-top: 22px;">1</td>
+                                <td>
+                                    <img src="./images/adele.jpeg"class="rounded-circle img-thumbnail" width="50px" height="50px" alt="">
+                                    &nbsp;Adele
+                                </td>
+                                <td style="padding-top: 22px;">4/10/2013</td>
+                                <td style="padding-top: 22px;">Admin</td>
+                                <td style="padding-top: 22px;">
+                                    <div class="row ml-0">
+                                        <div class="col-1.5 circle"></div>
+                                        <div class="col-11.5">&nbsp; Active</div>
+                                    </div>
+                                </td>
+                                <td style="padding-top: 22px;">
+                                    <i class="fa-sharp fa-solid fa-gear" style="cursor: pointer; font-size: 20px; color: blue;"></i>&nbsp;&nbsp;&nbsp;
+                                    <i class="fa-solid fa-circle-xmark" style="cursor: pointer; font-size: 20px; color: red;"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-top: 22px;">2</td>
+                                <td>
+                                    <img src="./images/celine.jpeg"class="rounded-circle img-thumbnail" width="50px" height="50px" alt="">
+                                    &nbsp;Celine Dion
+                                </td>
+                                <td style="padding-top: 22px;">05/08/2014</td>
+                                <td style="padding-top: 22px;">Publisher</td>
+                                <td style="padding-top: 22px;">
+                                    <div class="row ml-0">
+                                        <div class="col-1.5 circle"></div>
+                                        <div class="col-11.5">&nbsp; Active</div>
+                                    </div>
+                                </td>
+                                <td style="padding-top: 22px;">
+                                    <i class="fa-sharp fa-solid fa-gear" style="cursor: pointer; font-size: 20px; color: blue;"></i>&nbsp;&nbsp;&nbsp;
+                                    <i class="fa-solid fa-circle-xmark" style="cursor: pointer; font-size: 20px; color: red;"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-top: 22px;">3</td>
+                                <td>
+                                    <img src="./images/mariah.jpeg"class="rounded-circle img-thumbnail" width="50px" height="50px" alt="">
+                                    &nbsp;Mariah Carey
+                                </td>
+                                <td style="padding-top: 22px;">11/05/2015</td>
+                                <td style="padding-top: 22px;">Publisher</td>
+                                <td style="padding-top: 22px;">
+                                    <div class="row ml-0">
+                                        <div class="col-1.5 suspended"></div>
+                                        <div class="col-11.5">&nbsp; Suspended</div>
+                                    </div>
+                                </td>
+                                <td style="padding-top: 22px;">
+                                    <i class="fa-sharp fa-solid fa-gear" style="cursor: pointer; font-size: 20px; color: blue;"></i>&nbsp;&nbsp;&nbsp;
+                                    <i class="fa-solid fa-circle-xmark" style="cursor: pointer; font-size: 20px; color: red;"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-top: 22px;">4</td>
+                                <td>
+                                    <img src="./images/rihanna.jpeg"class="rounded-circle img-thumbnail" width="50px" height="50px" alt="">
+                                    &nbsp;Rihanna
+                                </td>
+                                <td style="padding-top: 22px;">06/09/2016</td>
+                                <td style="padding-top: 22px;">Reviewer</td>
+                                <td style="padding-top: 22px;">
+                                    <div class="row ml-0">
+                                        <div class="col-1.5 circle"></div>
+                                        <div class="col-11.5">&nbsp; Active</div>
+                                    </div>
+                                </td>
+                                <td style="padding-top: 22px;">
+                                    <i class="fa-sharp fa-solid fa-gear" style="cursor: pointer; font-size: 20px; color: blue;"></i>&nbsp;&nbsp;&nbsp;
+                                    <i class="fa-solid fa-circle-xmark" style="cursor: pointer; font-size: 20px; color: red;"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-top: 22px;">5</td>
+                                <td>
+                                    <img src="./images/whitney.jpeg"class="rounded-circle img-thumbnail" width="50px" height="50px" alt="">
+                                    &nbsp;Whitney Houston
+                                </td>
+                                <td style="padding-top: 22px;">12/08/2017</td>
+                                <td style="padding-top: 22px;">Moderator</td>
+                                <td style="padding-top: 22px;">
+                                    <div class="row ml-0">
+                                        <div class="col-1.5 inactive"></div>
+                                        <div class="col-11.5">&nbsp; Inactive</div>
+                                    </div>
+                                </td>
+                                <td style="padding-top: 22px;">
+                                    <i class="fa-sharp fa-solid fa-gear" style="cursor: pointer; font-size: 20px; color: blue;"></i>&nbsp;&nbsp;&nbsp;
+                                    <i class="fa-solid fa-circle-xmark" style="cursor: pointer; font-size: 20px; color: red;"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-4 text-muted pl-4">
+                Showing <b>5</b> out of <b>25</b> entries
+            </div>
+            <div class="col-8 text-muted page">
+                <span style="cursor: pointer; padding-right: 30px;">Previous</span>
+                <span class="badge badge-light"style="cursor: pointer;">1</span>&nbsp;&nbsp;&nbsp;
+                <span class="badge badge-light"style="cursor: pointer;">2</span>&nbsp;&nbsp;&nbsp;
+                <span class="badge badge-primary"style="cursor: pointer;">3</span>&nbsp;&nbsp;&nbsp;
+                <span class="badge badge-light"style="cursor: pointer;">4</span>&nbsp;&nbsp;&nbsp;
+                <span class="badge badge-light"style="cursor: pointer;">5</span>&nbsp;&nbsp;&nbsp;
+                <span style="cursor: pointer; padding-left: 20px;">Next</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

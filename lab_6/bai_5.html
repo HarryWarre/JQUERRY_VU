@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap.css">
+    <script src="./jquery-3.5.1.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        form {
+            margin-left: 970px;
+        }
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 785px;
+        }
+        .carousel-indicators li { 
+            width: 20px; height: 20px; 
+            border-radius: 100%; 
+            background-color:green;
+        }
+        .carousel-indicators li {
+            text-indent: 0px; 
+            text-align: center; 
+            color: white; 
+            margin: 0 2px; 
+            width: 30px; 
+            height: 30px; border: none;
+            border-radius: 100%; 
+            line-height: 30px; 
+            background-color: #999; 
+            transition: all 0.25s ease; 
+        }
+        .carousel-indicators .active, .hover {
+            margin: 0 2px; 
+            width: 30px; height: 30px; 
+            background-color: #337ab7; 
+        }
+        .content {
+            margin-bottom: 250px;
+        }
+        .main {
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        .photo {
+            width: 250px;
+            height: 200px;
+            margin-left: 65px;
+        }
+        .seemore {
+            margin-left: 115px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(".carousel").carousel({
+                interval: 2000
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <nav class="container-fluid navbar navbar-expand-sm bg-dark navbar-dark">
+                    <a class="navbar-brand" href="#">Carousel</a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Dropdown Link</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline" action="/action_page.php">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active">1</li>
+                        <li data-target="#demo" data-slide-to="1">2</li>
+                        <li data-target="#demo" data-slide-to="2">3</li>
+                    </ul>
+                    
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/hoian.jpeg" alt="">
+                            <div class="carousel-caption content">
+                                <h1>Hội An</h1>
+                                <p>Hội An đang là điểm du lịch hot hit nhất Việt Nam đó nha, vậy nên đến du lịch Hội An lúc nào cũng thấy đông mà khách nước ngoài khéo còn đông hơn cả khách Việt, bạn có thấy vậy không?</p>
+                                <button class="btn btn-warning btn-lg mb-4" type="submit">Learn more</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/dalat.jpeg" alt="">
+                            <div class="carousel-caption content">
+                                <h1>Đà Lạt</h1>
+                                <p>Đồi chè Cầu Đất, xã Xuân Trường bồng bềnh trong sương mây. Đồi chè này không còn là điểm đến xa lạ với nhiều du khách. Từ trung tâm thành phố, du khách chạy xe máy chưa đến 30 km là tới. Vẻ đẹp ngát xanh của những cánh đồng chè chạy dài hòa cùng mây trời tạo nên một không gian yên bình.</p>
+                                <button class="btn btn-warning btn-lg mb-4" type="submit">Learn more</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/saigon.jpeg" alt="">
+                            <div class="carousel-caption content">
+                                <h2>Sài Gòn</h2>
+                                <p>Nếu Hà Nội được biết đến là thủ đô ngàn năm văn hiến với vẻ đẹp yên bình, trầm mạc cùng nhịp sống chậm rãi thì Sài Gòn lại là thành phố của những chuyển động, sự sôi nổi, sầm uất bậc nhất cả nước nhưng lại đan xen một chút cổ kính, một chút châu Âu giữa lòng Việt Nam. Để hiểu rõ nét kết hợp độc đáo đó của Sài Gòn hoa lệ, hãy cùng VNTRIP.VN bước vào hành trình khám phá nơi đây một cách đầy đủ và trọn vẹn nhất nhé!</p>
+                                <button class="btn btn-warning btn-lg mb-4" type="submit">Learn more</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 main">
+            <div class="col-4">
+                <img src="./images/danang.jpeg" class="img-thumbnail photo" alt="">
+                <div class="card-body">
+                    <h4 class="card-title" style="text-align: center; color: rgb(234, 147, 7);">Đà Nẵng</h4>
+                    <p class="card-text" style="text-align: justify; font-size: 10px;">Điểm du lịch này cách Đà Nẵng khoảng 40 km. Du khách có thể trải nghiệm không khí se lạnh và thời tiết 4 mùa trong ngày khi ghé thăm các điểm tham quan nổi bật như chùa Linh Ứng, Hầm rượu Debay, vườn hoa Le Jardin D'Amour, Cầu Vàng... Ngủ đêm trên làng Pháp cũng là một trải nghiệm thú vị cho khách đến Bà Nà.</p>
+                    <a href="#" class="btn btn-primary seemore">See More >></a>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="./images/hanoi.jpeg" class="img-thumbnail photo" alt="">
+                <div class="card-body">
+                    <h4 class="card-title" style="text-align: center; color: rgb(234, 15, 7);">Hà Nội</h4>
+                    <p class="card-text" style="text-align: justify; font-size: 10px;">Thành phố Hà Nội là Thủ đô ngàn năm văn hiến với những di tích cổ xưa, cuộc sống yên bình. Nếu đã một lần du lịch Hà Nội, chắc chắn bạn không thể nào quên không khí đặc trưng nơi đây, với Hồ Gươm, Hồ Tây, những quán cafe trầm mặc, những con đường nhỏ và những gánh hàng rong.</p>
+                    <a href="#" class="btn btn-primary seemore">See More >></a>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="./images/cantho.jpeg" class="img-thumbnail photo" alt="">
+                <div class="card-body">
+                    <h4 class="card-title" style="text-align: center; color: rgb(13, 242, 5);">Cần Thơ</h4>
+                    <p class="card-text" style="text-align: justify; font-size: 10px;">Cần Thơ là xứ Tây Đô với những con người chân phương và cảnh sắc miền sông nước bình dị mà cuốn hút, làm nao lòng các du khách đến tham quan. Đến Cần Thơ, bạn hãy cùng VNTRIP.VN khám phá 12 địa điểm du lịch không thể bỏ qua này nhé! Sẽ là một chuyến nghĩ dưỡng tuyệt vời của bạn.</p>
+                    <a href="#" class="btn btn-primary seemore">See More >></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
